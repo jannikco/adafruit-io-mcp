@@ -1,39 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "24f225a6b51f687c65c7c30ad7c60ddb3c59766a1ced9c64d019fab3871b7cff",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://io.adafruit.com/api/docs/v2.json"
-  ],
   "id": "adafruit-io-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Adafruit IO MCP setup and connection checker",
-  "description": "Generate Adafruit IO MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Adafruit IO for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-adafruit-io-mcp",
+  "sourceRevision": "b5f56ac4d17ae9ca67599e095e3fe7e26c7d0af2690b6ba44879e06afc561beb",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://io.adafruit.com/api/docs/v2.json"
+  ],
+  "utility": {
+    "problem": "Prepare Adafruit IO and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "adafruit-io",
   "appName": "Adafruit IO",
-  "providerDocs": "https://io.adafruit.com/api/docs/v2.json",
-  "providerWebsite": "https://io.adafruit.com/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://io.adafruit.com/api/docs/",
-    "tenantRequired": false,
-    "accountParameterNames": [
-      "username"
-    ]
-  },
-  "attributionSlug": "github-adafruit-io-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-adafruit-io",
+      "description": "Connect AI agents to Adafruit IO using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-adafruit-io/SKILL.md": "be1712b7da90f2538b1c79a3020533a0293d9a4a9d1cdc15f07aff4d18bd6963"
+  }
+}
