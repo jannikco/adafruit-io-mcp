@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "24f225a6b51f687c65c7c30ad7c60ddb3c59766a1ced9c64d019fab3871b7cff",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://io.adafruit.com/api/docs/v2.json"
+  ],
+  "id": "adafruit-io-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Adafruit IO MCP setup and connection checker",
+  "description": "Generate Adafruit IO MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "adafruit-io",
+  "appName": "Adafruit IO",
+  "providerDocs": "https://io.adafruit.com/api/docs/v2.json",
+  "providerWebsite": "https://io.adafruit.com/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://io.adafruit.com/api/docs/",
+    "tenantRequired": false,
+    "accountParameterNames": [
+      "username"
+    ]
+  },
+  "attributionSlug": "github-adafruit-io-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
